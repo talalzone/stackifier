@@ -26,7 +26,7 @@ mvn clean install
 
 // Create Stackifier using builder
 Stackifier stackifier = new Stackifier.Builder()
-        .add("org.apache.commons") // Add libraries you with to stackup in stack trace
+        .add("org.apache.commons") // Add libraries you wish to stackup in stack trace
         .add("java", "sun", "junit")
         .use(new StackTraceDeserializer()) // Skip this to use default deserializer
         .get();
