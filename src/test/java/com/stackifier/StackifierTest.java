@@ -97,6 +97,16 @@ public class StackifierTest {
         assertEquals(javaGroupElements.size(), 8);
     }
 
+    @Test
+    public void testPrettyPrint() {
+        Stackifier stackifier = new Stackifier.Builder()
+                .add("java", "sun", "junit", "org.apache.commons", "org.pitest")
+                .get();
+
+        Stackified stackified = stackifier.stackify(stacktrace);
+        stackified.prettyPrint();
+    }
+
     private static String read(String path) throws IOException {
         StringBuilder sb = new StringBuilder();
 
