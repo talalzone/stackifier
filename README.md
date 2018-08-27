@@ -44,7 +44,7 @@ List<Group> groups = stackified.getGroups();
 
 ## Example
 
-#### Sample Stacktrace
+### Sample Stacktrace
 ```
 java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
 	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
@@ -74,7 +74,7 @@ java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
 
 ```
 
-#### Pretty Printing
+### Pretty Printing
 ```java
 Stackified stackified = stackifier.stackify(sample);
 stackified.prettyPrint();
@@ -122,7 +122,7 @@ stackified.prettyPrint();
 		java.lang.Thread.run(Thread.java:748)
 ```
 
-#### Getting Groups ####
+### Getting Groups
 **By group name**
 ```
 List<Group> javaGroups = stackified.getGroups("java"); // here group name is 'java'
